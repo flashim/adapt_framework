@@ -1,5 +1,4 @@
-[
-    {
+[{
         "_id": "c-05",
         "_parentId": "b-05",
         "_type": "component",
@@ -92,8 +91,7 @@
         "body": "The narrative component lets you scroll through a series of images each with some accompanying text.<br><br>This component is always spanned.",
         "instruction": "Select the next and back arrows to find out more.",
         "mobileInstruction": "Select the next and back arrows followed by the plus icon to find out more.",
-        "_items": [
-            {
+        "_items": [{
                 "title": "Narrative item 1",
                 "body": "Narratives are particularly good for showing dialogue between two or more characters, with each step of the conversation being accompanied by an image. This photo story approach can be used to provide context for the learning to follow, to illustrate real-world application of the learning or to show the impact on people when the learning hasn’t been applied correctly.",
                 "_graphic": {
@@ -147,8 +145,7 @@
             "src": "course/en/images/full_width.jpg",
             "alt": "Placeholder graphic."
         },
-        "_items": [
-            {
+        "_items": [{
                 "title": "Hot graphic item 1",
                 "body": "This is display text 1 which we have associated with the tablet image on the desktop.",
                 "_graphic": {
@@ -211,12 +208,10 @@
         "_media": {
             "mp4": "course/en/video/c-40.mp4",
             "poster": "course/en/video/c-40.jpg",
-            "cc": [
-                {
-                    "srclang": "en",
-                    "src": "course/en/video/c-40.vtt"
-                }
-            ]
+            "cc": [{
+                "srclang": "en",
+                "src": "course/en/video/c-40.vtt"
+            }]
         },
         "_transcript": {
             "_inlineTranscript": true,
@@ -243,8 +238,7 @@
         "displayTitle": "Accordion",
         "body": "You can use the <strong>accordion</strong> component to present learners with a series of headings which, once selected, expand to reveal associated text. Select each of the headings below to find out more about how accordions can be used.<br><br>These components can be either single or spanned. If spanned they can also contain a graphic.",
         "instruction": "Select the headings to find out more.",
-        "_items": [
-            {
+        "_items": [{
                 "title": "Lists",
                 "body": "This is display text 1 and we’re using it to discuss lists.<br><br>If you need to present a list that can stand alone as a piece of content, but which can also be explored in more detail, accordions are a great choice.",
                 "_graphic": {
@@ -281,18 +275,18 @@
         "_component": "mcq",
         "_classes": "",
         "_layout": "left",
-        "_attempts": 1,
+        "_attempts": 2,
         "_questionWeight": 1,
         "_canShowModelAnswer": true,
         "_shouldDisplayAttempts": false,
         "_isRandom": true,
         "_selectable": 1,
+        "_autoReset": true,
         "title": "Multiple Choice Question",
         "displayTitle": "Multiple Choice Question",
         "body": "In what year was the first recorded instance of a large scale assessment that consists solely of multiple choice questions?",
         "instruction": "Choose one or more options and select Submit.",
-        "_items": [
-            {
+        "_items": [{
                 "text": "1917",
                 "_shouldBeSelected": true
             },
@@ -357,8 +351,7 @@
         "body": "The graphical multiple choice question is an alternative to the standard MCQ, and allows you to ask a question and present the options as graphics (with accompanying captions). This component is always spanned.",
         "instruction": "Choose option 2 and select Submit.",
         "_columns": 3,
-        "_items": [
-            {
+        "_items": [{
                 "text": "Option 1",
                 "_shouldBeSelected": false,
                 "_graphic": {
@@ -421,13 +414,11 @@
             ["Learning Pool"],
             ["Sponge"]
         ],
-        "_items": [
-            {
-                "prefix": "",
-                "placeholder": "Enter answer here",
-                "suffix": ""
-            }
-        ],
+        "_items": [{
+            "prefix": "",
+            "placeholder": "Enter answer here",
+            "suffix": ""
+        }],
         "_feedback": {
             "title": "Feedback",
             "correct": "Correct answer feedback.<br><br>That’s correct. The Adapt Open Source project was established by Kineo, Learning Pool and Sponge. At the time of writing, there are a total of nine <a href='https://www.adaptlearning.org/index.php/collaborators/' target='_blank'>official collaborators</a>.<br><br><em>Component facts: <strong>Text input</strong> components let learners enter their own answers, which is great for questions that require a bit more flexibility, like those with answers that could be written as both full words and numbers.</em>",
@@ -478,11 +469,9 @@
         "body": "Can you identify some of the key facts and figures associated with the Adapt Open Source project?",
         "instruction": "Choose an option from each dropdown list and select Submit.",
         "placeholder": "Select an option",
-        "_items": [
-            {
+        "_items": [{
                 "text": "The Adapt Open Source project was formed in:",
-                "_options": [
-                    {
+                "_options": [{
                         "text": "2008",
                         "_isCorrect": false
                     },
@@ -502,8 +491,7 @@
             },
             {
                 "text": "Adapt adheres to level 'AA' of the <abbr title='Web Content Accessibility Guidelines'>WCAG</abbr> version 2, but when were these published?",
-                "_options": [
-                    {
+                "_options": [{
                         "text": "2008",
                         "_isCorrect": true
                     },
@@ -523,8 +511,7 @@
             },
             {
                 "text": "Which of these languages would benefit from using the recent addition of Right To Left (RTL) language support within Adapt?",
-                "_options": [
-                    {
+                "_options": [{
                         "text": "Portuguese",
                         "_isCorrect": false
                     },
@@ -613,8 +600,7 @@
         "displayTitle": "To scroll or not to scroll?",
         "body": "Can you identify a few of the benefits that a vertical scrolling approach offers over the traditional back and next approach?",
         "instruction": "Choose one or more options and select Submit.",
-        "_items": [
-            {
+        "_items": [{
                 "text": "Scrolling is common place on the web and therefore familiar to the learner",
                 "_shouldBeSelected": true
             },
@@ -681,8 +667,7 @@
         "displayTitle": "Do you know your plugins?",
         "body": "Which of the following are types of Adapt plugins?",
         "instruction": "Choose one or more options and select Submit.",
-        "_items": [
-            {
+        "_items": [{
                 "text": "Component",
                 "_shouldBeSelected": true
             },
@@ -753,8 +738,7 @@
         "displayTitle": "It’s as simple as A, B, C",
         "body": "Can you identify the missing word in the following sequence?<br>Article / ..... / Component.",
         "instruction": "Choose an option and select Submit.",
-        "_items": [
-            {
+        "_items": [{
                 "text": "Block",
                 "_shouldBeSelected": true
             },
@@ -822,8 +806,7 @@
         "displayTitle": "Content objects",
         "body": "What would you be referring to when describing a content object within Adapt?",
         "instruction": "Choose one or more options and select Submit.",
-        "_items": [
-            {
+        "_items": [{
                 "text": "Page",
                 "_shouldBeSelected": true
             },
@@ -890,8 +873,7 @@
         "displayTitle": "Adding titles to icons",
         "body": "What JSON file would you need to edit in order to add a title to an icon in the navigation bar?",
         "instruction": "Choose an option and select Submit.",
-        "_items": [
-            {
+        "_items": [{
                 "text": "course.json",
                 "_shouldBeSelected": true
             },
@@ -955,8 +937,7 @@
         "displayTitle": "Control the scroll",
         "body": "The <strong>Trickle</strong> extension makes it possible to control how the learner scrolls down the page, but what elements of a page can it be applied to?",
         "instruction": "Choose an option and select Submit.",
-        "_items": [
-            {
+        "_items": [{
                 "text": "Article",
                 "_shouldBeSelected": true
             },
@@ -1042,8 +1023,7 @@
         },
         "_comment": "use {{score}}, {{maxScore}} and {{scoreAsPercent}} to display score and percentage",
         "_completionBody": "{{{feedback}}}",
-        "_bands": [
-            {
+        "_bands": [{
                 "_score": 0,
                 "feedback": "You didn’t pass, achieving a score of {{scoreAsPercent}}%.<br><br>You didn’t do so well in the Adapt assessment demo, but don’t worry. There’s lots of information about the Adapt basics on <a href='http://www.adaptlearning.org/' target='_blank'>our site</a>. We’d also suggest you pay a visit to <a href='https://community.adaptlearning.org/mod/forum/view.php?id=4' target='_blank'>the forum</a> or <a href='https://gitter.im/adaptlearning/adapt_framework'>chat room</a> and ask our ever-helpful community to answer any questions that you might have.",
                 "_allowRetry": true
