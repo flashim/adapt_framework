@@ -32,13 +32,22 @@ define([
 
             this.listenTo(this.model, 'question:refresh', this.refresh);
 
-            // Checks to see if the question should be reset on revisit
-            this.checkIfResetOnRevisit();
-            // This method helps setup default settings on the model
-            this._runModelCompatibleFunction("setupDefaultSettings");
-            // Blank method for setting up questions before rendering
-            this.setupQuestion();
+					this.listenTo(Adapt, 'popup:closed', this.autoReset);
 
+					// Checks to see if the question should be reset on revisit
+					this.checkIfResetOnRevisit();
+					// This method helps setup default settings on the model
+					this._runModelCompatibleFunction('setupDefaultSettings');
+					// Blank method for setting up questions before rendering
+					this.setupQuestion();
+				},
+
+				autoReset: function() {
+					if (this.model.get('_autoReset')) {
+						if (!this.model.get('_isInteractionComplete')) {
+							this.checkIfResetOnRevisit();
+						}
+					}
         },
 
         // Used in the question view to disabled the question when _isEnabled has been set to false
