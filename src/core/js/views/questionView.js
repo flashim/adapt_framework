@@ -127,6 +127,14 @@ define(
 				postRender: function() {
 					this.addButtonsView();
 					this.onQuestionRendered();
+					
+					//.. For _resetOnComplete, forcefully resetting a completed question component :: @flashim
+					if (this.model.get('_resetOnComplete') && this.model.get('_isInteractionComplete')) {
+						this.model.set({
+							_buttonState: BUTTON_STATE.RESET
+						});
+						this.onButtonStateUpdate();
+					}
 				},
 
 				// Used to setup buttonsView and sets up the internal events for the question
@@ -278,6 +286,26 @@ define(
 				},
 
 				onResetClicked: function() {
+					
+					//.. For _resetOnComplete, forcefully resetting a completed question component :: @flashim
+					if (this.model.get('_resetOnComplete') && this.model.get('_isInteractionComplete')) {
+						this.model.set({
+							_attemptsLeft: this.model.get('_attempts'),
+							_isCorrect: undefined,
+							_isSubmitted: false,
+							_isInteractionComplete: false,
+							_isComplete: false,
+							_isLocked: false,
+							_isEnabled: true
+						});
+						_.defer(
+							_.bind(function() {
+								this.$('.component-widget').removeClass('submitted show-user-answer');
+								this.model.refresh();
+							}, this)
+						);
+					}
+					
 					this.setQuestionAsReset();
 
 					this._runModelCompatibleFunction('updateButtons');
